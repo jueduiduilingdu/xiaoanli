@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/margin_252"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/bg_corner_white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:paddingTop="@dimen/margin_8"
+        android:paddingBottom="@dimen/margin_8"
+        android:paddingLeft="@dimen/margin_28"
+        android:paddingRight="@dimen/margin_28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bottom_border_white">
+        <TextView
+            android:id="@+id/disu_msg"
+            android:layout_width="wrap_content"
+            android:maxEms="11"
+            android:layout_height="@dimen/margin_45"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/font_size_14"
+            android:gravity="center"
+            android:text="@string/nowIsWifi" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45">
+        <TextView
+            android:id="@+id/dw_sure_txt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/sure"
+            android:gravity="center"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/font_size_15" />
+        <TextView
+            android:id="@+id/dw_cancel_txt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/left_border_white"
+            android:text="@string/cancel"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/font_size_15" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginRight="@dimen/margin_6"
+        android:layout_marginTop="@dimen/margin_6"
+        android:id="@+id/ic_content_tv"
+        android:background="@drawable/bg_corner_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/font_size_14"
+        android:singleLine="true"
+        android:text="职业禁忌人"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_4"
+        android:paddingBottom="@dimen/margin_4"/>
+    <ImageView
+        android:id="@+id/delete_img"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/del_btn"/>
+</FrameLayout>

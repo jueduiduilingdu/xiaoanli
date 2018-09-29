@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'android'
+            keyPassword 'android'
+            storeFile file('D:/androidworkspace/doumee.keystore')
+            storePassword 'android'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.ahapp.huantianxidi"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 6
+        versionName "1.5"
+        multiDexEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a","x86_64" , "arm64-v8a" , "x86"
+        }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    // 导入短视频SDK aar
+    implementation(name: 'LiteAVSDK_UGC', ext: 'aar')
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.4.5'
+    implementation 'com.contrarywind:Android-PickerView:3.2.5'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    implementation 'com.github.LuckSiege:PictureSelectorLight:v2.1.1'
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+    implementation 'com.github.bumptech.glide:glide:4.0.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.github.promeg:tinypinyin:2.0.3'
+    //implementation 'com.github.PhilJay:MPAndroidChart:v2.1.4'
+    compile 'liji.library.dev:citypickerview:0.7.0'
+    compile 'com.android.support:cardview-v7:23.2.0'
+    compile project(':library')
+    compile project(':MPChartLib')
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="@dimen/left_right_margin"
+        android:textColor="@color/Grey"
+        android:id="@+id/goods_name"
+        android:textSize="@dimen/content_text_size_16" />
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin"
+        android:layout_height="1px"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:paddingRight="@dimen/left_right_margin"
+        android:paddingBottom="@dimen/top_bottom_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_layout"
+            android:paddingTop="@dimen/top_bottom_margin"
+            android:paddingBottom="@dimen/top_bottom_margin"
+            android:id="@+id/label_1"
+            android:textSize="@dimen/content_text_size_16" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/customRatingBar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:numStars="5"
+            android:rating="0"
+            android:layout_toRightOf="@+id/label_1"
+            android:paddingTop="@dimen/top_bottom_margin"
+            android:stepSize="1"
+            android:id="@+id/goods_score"
+            android:paddingBottom="@dimen/top_bottom_margin"
+            android:isIndicator="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Comments_layout"
+            android:paddingTop="@dimen/top_bottom_margin"
+            android:paddingBottom="@dimen/top_bottom_margin"
+            android:id="@+id/label_2"
+            android:layout_below="@+id/label_1"
+            android:textSize="@dimen/content_text_size_16" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/goods_content"
+            android:layout_below="@+id/label_1"
+            android:padding="@dimen/left_right_margin"
+            android:layout_toRightOf="@id/label_2"
+            android:textSize="@dimen/content_text_size_16"
+            android:background="@drawable/edittext_bg"
+            android:gravity="left"
+            android:textColor="@color/Grey"
+            android:hint="@string/Please_enter_your_evaluation" />
+    </RelativeLayout>
+
+    <com.ahapp.huantianxidi.view.NoScrollGridView
+        android:id="@+id/pic_grid_item"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/margin_2"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:horizontalSpacing="@dimen/margin_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

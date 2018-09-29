@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:id="@+id/tv_shop_aptitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="商家资质"
+        android:textColor="@color/white"
+        android:drawableLeft="@mipmap/icon_sj_sjzz"
+        android:drawablePadding="@dimen/margin_6"
+        android:gravity="right" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dis_0.5"
+        android:layout_margin="@dimen/margin_12" />
+
+    <TextView
+        android:id="@+id/tv_shop_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="联系商家"
+        android:textColor="@color/white"
+        android:drawableLeft="@mipmap/icon_sj_lxkf"
+        android:drawablePadding="@dimen/margin_6"
+        android:gravity="right" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dis_0.5"
+        android:layout_margin="@dimen/margin_12" />
+
+    <TextView
+        android:id="@+id/tv_shop_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="分享  "
+        android:textColor="@color/white"
+        android:drawableLeft="@mipmap/icon_sj_fx"
+        android:drawablePadding="@dimen/margin_6"
+        android:gravity="right" />
+</LinearLayout>

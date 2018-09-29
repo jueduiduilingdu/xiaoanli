@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_app_bar" />
+
+    <com.ahapp.huantianxidi.view.EditTextWithDel
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:id="@+id/search_bar"
+        android:layout_margin="@dimen/left_right_margin"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:hint="@string/Search_for_geographical_location"
+        android:background="@drawable/edittext_bg" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/search_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmapView"
+        android:background="@color/lineColor"
+        android:padding="@dimen/left_right_margin"
+        android:text=""
+        android:textColor="@color/Grey"
+        android:id="@+id/label_1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_12"
+        android:visibility="gone"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:hint="输入地理位置"
+            android:padding="@dimen/margin_12" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bottom_button_text_size_18"
+            android:layout_marginLeft="@dimen/left_right_margin"
+            android:layout_marginRight="@dimen/left_right_margin"
+            android:layout_marginTop="@dimen/margin_30"
+            android:padding="@dimen/margin_12"
+            android:id="@+id/bt_confirm"
+            android:background="@drawable/button_red_bg" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/label_1"
+        android:id="@+id/list_view"
+        android:background="@color/white"></ListView>
+</LinearLayout>

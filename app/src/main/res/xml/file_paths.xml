@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="camera_photos"
+        path="Android/data/com.ahapp.huantianxidi/" />
+    <external-path
+        name="external_storage_root"
+        path="." />
+</paths>
+
+
+

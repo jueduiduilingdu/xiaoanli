@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f7f7f7</color>
+    <color name="colorPrimaryDark">#f7f7f7</color>
+    <color name="colorAccent">#f8730a</color>
+    <!--重要：用于重要的文字信息，标题信息（如导航名称、大板块标题，类目名称等）-->
+    <color name="colorTitle">#181816</color>
+    <!--项目主色-->
+    <color name="colorMain">#f8730a</color>
+    <!--项目主色-->
+    <color name="color_Main">#D2003F</color>
+    <!--一般：标题背景颜色-->
+    <color name="colorTitleBg">#ffffff</color>
+    <color name="colorText">#3a444e</color>
+    <color name="colorContent">#aaaaaa</color>
+    <!--一般：时间显示-->
+    <color name="colorTime">#aaaaaa</color>
+    <!--一般：提示文字-->
+    <color name="colorHint">#aaaaaa</color>
+    <color name="LightGrey">#909090</color>
+    <!--一般：分割线、边框颜色-->
+    <color name="colorBorder">#cdcdcd</color>
+    <color name="windowTransaction">#00000000</color>
+    <color name="midWindowTransaction">#80000000</color>
+    <!--较弱：内容区域的背景色eae9e7-->
+    <color name="colorContentBg">#f7f7f7</color>
+    <!--按钮浅色背景-->
+    <color name="colorGray">#eeeeee</color>
+
+    <color name="colorBlue">#4f94fb</color>
+    <color name="colorRed">#ff3930</color>
+    <color name="colorYellow">#ffbf5b</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#262c34</color>
+
+    <!--二维码-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="colorKtv">#d173fd</color>
+    <color name="colorBar">#eca338</color>
+    <color name="colorQBar">#5cc453</color>
+    <color name="colorSongDetails">#1f2024</color>
+
+
+
+    <color name="record_progress_bg">#66000000</color> <!-- 40%不透明度 -->
+    <color name="record_progress">#ffbf5b</color>
+    <color name="record_progress_pending">#ffbfab</color>
+
+
+    <!-- dialog-->
+    <color name="common_button_p">#08000000</color>
+    <color name="transparent1">#00000000</color>
+    <!--带有边框的颜色值-->
+    <color name="colorBK">#e6e6e6</color>
+    <color name="grey">#646464</color>
+    <!--文字主色调 和 浅色调-->
+    <color name="text_main">#656565</color>
+    <color name="text_vice">#bcbcbc</color>
+    <!--按钮浅色调-->
+    <color name="color_bj">#d6d6d6</color>
+    <color name="lineColor">#e5e5e5</color>
+    <!--灰色按钮颜色-->
+    <color name="button_huise">#dddddd</color>
+    <!--搜索框 颜色-->
+    <color name="search_box">#999999</color>
+    <!--edittext hint颜色  -->
+    <color name="etittext_hint_color">#cccaca</color>
+    <!--文字辅助色-->
+    <color name="text_auxiliary_color">#8a94a0</color>
+    <color name="child_item_diveder">#D6D6D5</color>
+    <color name="Grey">#646464</color>
+    <color name="gray">#999999</color>
+    <color name="black_deep">#FF000000</color>
+    <!--橙色按钮颜色-->
+    <color name="button_orange">#ff7c54</color>
+    <!--蓝色按钮颜色-->
+    <color name="button_blie">#00a0e9</color>
+    <color name="lightGrey">#909090</color>
+    <color name="base_text_press_color">#F5F5F5</color>
+    <color name="app_main_color">#ffe64d68</color>
+    <color name="group_item_pressed_bg">#E5E5E5</color>
+</resources>

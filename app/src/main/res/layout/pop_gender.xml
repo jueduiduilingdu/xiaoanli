@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pg_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45"
+        android:gravity="center"
+        android:textColor="@color/colorTime"
+        android:textSize="@dimen/font_size_14"
+        android:text="@string/SexSelection"
+        android:background="@drawable/bottom_border_white" />
+
+    <TextView
+        android:id="@+id/pg_man_txt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/font_size_14"
+        android:text="@string/man"
+        android:background="@drawable/bottom_border_white" />
+
+    <TextView
+        android:id="@+id/pg_woman_txt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/font_size_14"
+        android:text="@string/woman"
+        android:background="@drawable/bottom_border_white" />
+
+    <TextView
+        android:background="@color/colorWhite"
+        android:id="@+id/pg_secret_txt"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/font_size_14"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45"
+        android:gravity="center"
+        android:text="@string/secret" />
+
+    <TextView
+        android:background="@color/colorWhite"
+        android:id="@+id/pg_cancel_txt"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/font_size_14"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45"
+        android:gravity="center"
+        android:text="@string/cancel" />
+</LinearLayout>

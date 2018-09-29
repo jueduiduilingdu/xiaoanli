@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rl_action_image"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_oval_f7f7f7">
+
+        <TextView
+            android:id="@+id/search_name"
+            android:background="@drawable/bg_oval_f7f7f7"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/margin_12"
+            android:paddingRight="@dimen/margin_12"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:text="1111"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/iv_delete_si"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:gravity="center"
+            android:background="@mipmap/icon_fb_close" />
+    </LinearLayout>
+
+
+</LinearLayout>

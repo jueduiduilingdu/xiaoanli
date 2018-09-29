@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll_comment"
+    app:cardBackgroundColor="@android:color/white"
+    android:paddingBottom="@dimen/margin_6">
+    <!--android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="@null"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60"
+            android:id="@+id/iv_head"
+            android:src="@mipmap/default_img_z"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/iv_head"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_item_service_cellphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="1386*****2512"
+                    android:textColor="@color/Grey"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_item_service_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2016-05-05"
+                    android:textColor="@color/Grey"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="@dimen/left_right_margin">
+
+                <RatingBar
+                    android:id="@+id/rb_service_item_ping"
+                    style="@style/roomRatingBar"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1"
+                    android:isIndicator="true"
+                    android:layout_height="10dp" />
+                <!-- android:layout_toRightOf="@+id/score_1"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:id="@+id/tv_service_item_ping_sh"
+                    android:layout_toRightOf="@id/rb_service_item_ping"
+                    android:visibility="gone"
+                    android:text="送货速度：" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@id/tv_service_item_ping_sh"
+                    android:text="28分钟" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_service_item_ping_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_14" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.ahapp.huantianxidi.view.MyGridView
+        android:id="@+id/gv_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:horizontalSpacing="@dimen/margin_6"
+        android:verticalSpacing="@dimen/margin_6"
+        android:layout_marginBottom="@dimen/left_right_margin"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin"></com.ahapp.huantianxidi.view.MyGridView>
+
+    <LinearLayout
+        android:id="@+id/ll_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_6"
+        android:orientation="horizontal"
+        android:background="@color/transparent_db"
+        android:layout_marginLeft="@dimen/margin_12"
+        android:layout_marginRight="@dimen/margin_12"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商家回复：" />
+
+        <TextView
+            android:id="@+id/tv_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

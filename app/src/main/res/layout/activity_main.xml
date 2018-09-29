@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorContentBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/am_bottom_lyt"
+        android:background="@drawable/top_border_white"
+        android:paddingTop="@dimen/margin_6"
+        android:paddingBottom="@dimen/margin_6"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:drawableTop="@drawable/home_selector_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/am_home_page"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/homePage"
+            android:textColor="@drawable/text_color_selected_main"
+            android:checked="true" />
+        <TextView
+            android:drawableTop="@drawable/find_selector_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/am_find"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Category"
+            android:textColor="@drawable/text_color_selected_main"
+            android:checked="true" />
+        <TextView
+            android:drawableTop="@drawable/business_selector_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/am_business"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/found"
+            android:textColor="@drawable/text_color_selected_main" />
+        <TextView
+            android:drawableTop="@drawable/shopping_cart_selectr_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/am_shopping_cart"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Shopping_cart"
+            android:textColor="@drawable/text_color_selected_main" />
+        <TextView
+            android:drawableTop="@drawable/me_selector_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/am_me"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/my"
+            android:textColor="@drawable/text_color_selected_main"
+            android:checked="true" />
+    </LinearLayout>
+
+    <com.ahapp.huantianxidi.view.DisabledScrollViewPager
+        android:background="@color/colorWhite"
+        android:layout_above="@id/am_bottom_lyt"
+        android:id="@+id/am_content_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
